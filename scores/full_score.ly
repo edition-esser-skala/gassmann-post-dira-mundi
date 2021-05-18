@@ -15,6 +15,7 @@
         \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \markup \center-column { "Clarino I, II" "in C" }
+            \set Staff.soloText = \markup \remark \medium "clno 1"
             \partCombine \ClarinoI \ClarinoII
           >>
         >>
@@ -47,6 +48,7 @@
             \new Voice = "Soprano" { \dynamicUp \SopranoNotes }
           }
           \new Lyrics \lyricsto Soprano \SopranoLyrics
+          \new Lyrics \lyricsto Soprano \SopranoLyricsB
 
           \new Staff {
             \set Staff.instrumentName = \AltoIncipit

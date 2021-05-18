@@ -353,6 +353,10 @@ parOff = {
       (list left-par (cadr par-list))))
 }
 
+markDaCapo = {
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \mark \markup { \remark "da capo" }
+}
 
 
 % modify the Scheme function 'format-bass-figure'
@@ -458,7 +462,7 @@ bc =
   \context {
     \Score
     \compressEmptyMeasures
-    \override BarNumber.break-visibility = #'#(#f #t #t)
+    % \override BarNumber.break-visibility = #'#(#f #t #t)
   }
   \context {
     \StaffGroup
@@ -669,6 +673,9 @@ tocLabelLong = #(define-music-function
 
 
 tempoRec = \tempoMarkup "Allegro"
+tempoAria = \tempoMarkup "Andante"
+tempoAriaB = \tempoMarkup "Allegro assai"
+tempoAlleluja = \tempoMarkup "Allegro"
 
 
 \include "notes/clno1.ly"
