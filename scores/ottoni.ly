@@ -67,8 +67,7 @@
 \book {
   \bookpart {
     \header {
-      number = "1"
-      title = "F I R S T"
+      title = "P O S T   D I R A   M U N D I   B E L L A   S E D E B I T"
     }
     \paper { indent = 2\cm }
     \score {
@@ -78,17 +77,17 @@
             \set GrandStaff.instrumentName = \markup \center-column { "Clarino" "in C" }
             \new Staff {
               \set Staff.instrumentName = "I"
-              \xxxClarinoI
+              \ClarinoI
             }
             \new Staff {
               \set Staff.instrumentName = "II"
-              \xxxClarinoII
+              \ClarinoII
             }
           >>
         >>
         \new Staff {
           \set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
-          \xxxTimpani
+          \Timpani
         }
       >>
     }

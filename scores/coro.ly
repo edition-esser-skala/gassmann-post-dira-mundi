@@ -62,8 +62,7 @@
 \book {
   \bookpart {
     \header {
-      number = "1"
-      title = "F I R S T"
+      title = "P O S T   D I R A   M U N D I   B E L L A   S E D E B I T"
     }
     \paper { indent = 2\cm }
     \score {
@@ -71,33 +70,34 @@
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "Soprano"
-            \new Voice = "Soprano" { \dynamicUp \xxxSopranoNotes }
+            \new Voice = "Soprano" { \dynamicUp \SopranoNotes }
           }
-          \new Lyrics \lyricsto Soprano \xxxSopranoLyrics
+          \new Lyrics \lyricsto Soprano \SopranoLyrics
+          \new Lyrics \lyricsto Soprano \SopranoLyricsB
 
           \new Staff {
             \set Staff.instrumentName = "Alto"
-            \new Voice = "Alto" { \dynamicUp \xxxAltoNotes }
+            \new Voice = "Alto" { \dynamicUp \AltoNotes }
           }
-          \new Lyrics \lyricsto Alto \xxxAltoLyrics
+          \new Lyrics \lyricsto Alto \AltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Tenore"
-            \new Voice = "Tenore" { \dynamicUp \xxxTenoreNotes }
+            \new Voice = "Tenore" { \dynamicUp \TenoreNotes }
           }
-          \new Lyrics \lyricsto Tenore \xxxTenoreLyrics
+          \new Lyrics \lyricsto Tenore \TenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Basso"
-            \new Voice = "Basso" { \dynamicUp \xxxBassoNotes }
+            \new Voice = "Basso" { \dynamicUp \BassoNotes }
           }
-          \new Lyrics \lyricsto Basso \xxxBassoLyrics
+          \new Lyrics \lyricsto Basso \BassoLyrics
         >>
         \new Staff {
           \set Staff.instrumentName = "Organo"
-          \xxxOrgano
+          \Organo
         }
-        \new FiguredBass { \xxxBassFigures }
+        \new FiguredBass { \BassFigures }
       >>
     }
   }

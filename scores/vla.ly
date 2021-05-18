@@ -38,7 +38,7 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "b"
+    instrumentName = "vla"
   }
 }
 
@@ -47,12 +47,12 @@
     \header {
       title = "P O S T   D I R A   M U N D I   B E L L A   S E D E B I T"
     }
-    \paper { indent = 2\cm }
+    \paper { indent = 1.5\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Bassi"
-          \Organo
+          \set Staff.instrumentName = "Viola"
+          \Viola
         }
       >>
     }
