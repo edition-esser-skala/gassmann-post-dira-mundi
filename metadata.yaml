@@ -1,17 +1,19 @@
-composer: Gassmann, Florian Leopold
+composer:
+  last: Gassmann
+  first: Florian Leopold
 title: Post dira mundi bella sedebit
-id: (A-Ed B 81)
+subtitle: Offertorium de Tempore, Beata, et Sancta
 genre: offertorium
 scoring: S (solo), S, A, T, B (coro), 2 clno (C), timp (C–G), 2 vl, vla, b, org
+license: cc-by-sa-4.0
 sources:
-  1:
+  B1:
     siglum: A-Ed
     shelfmark: B 81
-    type: manuscript copy
-    date: unknown
     rism: 600038047
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/868.html
-github: gassmann-post-dira-mundi
+    license: public domain
+    principal: true
 imslp: Post_dira_mundi_bella_sedebit_(Gassmann,_Florian_Leopold)
-notes:
-
+parts:
+  ottoni: Clarino I, II in C\\Timpani in C–G

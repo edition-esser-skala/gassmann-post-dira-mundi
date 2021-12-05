@@ -6,21 +6,20 @@
 
 \book {
   \bookpart {
-    \header {
-      title = "P O S T   D I R A   M U N D I   B E L L A   S E D E B I T"
-    }
+    \section "Post dira mundi"
+    \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
         \new StaffGroup <<
           \new Staff <<
-            \set Staff.instrumentName = \markup \center-column { "Clarino I, II" "in C" }
+            \set Staff.instrumentName = \transposedName "Clarino I, II" "C" ""
             \set Staff.soloText = \markup \remark \medium "clno 1"
             \partCombine \ClarinoI \ClarinoII
           >>
         >>
         \new Staff {
-          \set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
+          \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
           \Timpani
         }
         \new StaffGroup <<
@@ -42,26 +41,20 @@
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \SopranoNotes }
           }
           \new Lyrics \lyricsto Soprano \SopranoLyrics
           \new Lyrics \lyricsto Soprano \SopranoLyricsB
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitAlto
             \new Voice = "Alto" { \dynamicUp \AltoNotes }
           }
           \new Lyrics \lyricsto Alto \AltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitTenore
             \new Voice = "Tenore" { \dynamicUp \TenoreNotes }
           }
           \new Lyrics \lyricsto Tenore \TenoreLyrics
